@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+}
+
+nav {
+	height: 30vh;
+	background-color: rebeccapurple;
+	display: flex;
+	justify-content: space-between;
+}
+
+.books {
+	height: 30vh;
+	background-color: red;
+
+}
+
+.book-card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.book-form {
+	height: 30vh;
+	background-color: rebeccapurple;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
