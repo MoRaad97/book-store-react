@@ -1,0 +1,12 @@
+.CategoriesContainer {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.checkStateBtn {
+  background-color: #0290ff;
+  font-size: 25px;
+  margin-top: 40px;
+  border: 1px solid #0290ff;
+  border-radius: 6px;
+}

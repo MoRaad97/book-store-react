@@ -1,13 +1,11 @@
-import React from "react";
-import BookList from "./bookList";
-import AddBookForm from "./addBookForm";
+import React from 'react';
+import BookList from './bookList';
+import AddBookForm from './addBookForm';
 
-const StoreContainer = () => {
-return (
+const StoreContainer = () => (
   <>
-  <BookList/>
-  <AddBookForm/>
+    <BookList />
+    <AddBookForm />
   </>
-)
-}
-export default StoreContainer
+);
+export default StoreContainer;

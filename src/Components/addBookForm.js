@@ -1,16 +1,15 @@
-import React from "react";
-import styles from './Styles/addBookForm.module.css'
-const AddBookForm = () => {
-  return (
-    <section className={styles.bookForm}>
-      <hr />
-      <form >
-        <input type="text" name="title" className={styles["title-input"]} placeholder="Book Title"/>
-        <input type="text" name="Author" className={styles["author-input" ]}placeholder="Book Author" />
-        <button>ADD BOOK</button>
-      </form>
-    </section>
-  )
-}
+import React from 'react';
+import styles from './Styles/addBookForm.module.css';
 
-export default AddBookForm
+const AddBookForm = () => (
+  <section className={styles.bookForm}>
+    <hr />
+    <form>
+      <input type="text" name="title" className={styles['title-input']} placeholder="Book Title" />
+      <input type="text" name="Author" className={styles['author-input']} placeholder="Book Author" />
+      <button type="button">ADD BOOK</button>
+    </form>
+  </section>
+);
+
+export default AddBookForm;

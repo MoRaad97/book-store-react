@@ -1,18 +1,18 @@
-import React, {useState} from "react";
-import BookCard from "./bookCard";
-import styles from './Styles/bookList.module.css'
-const BookList = () => {
+import React from 'react';
+import BookCard from './bookCard';
+import styles from './Styles/bookList.module.css';
 
-  const props = [{title: "MOhammed Book title111", author:"Book Author111"}]
+const BookList = () => {
+  const props = [{ title: 'MOhammed Book title111', author: 'Book Author111', id: 1 }];
 
   return (
     <section className={styles.books}>
-     <div className={styles.booksContainer}>
-      <BookCard books={props}/>
-     </div>
-     
-    </section>
-  )
-}
+      <div className={styles.booksContainer}>
+        <BookCard books={props} />
+      </div>
 
-export default BookList
+    </section>
+  );
+};
+
+export default BookList;

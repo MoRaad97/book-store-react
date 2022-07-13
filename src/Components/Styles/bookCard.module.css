@@ -1,8 +1,8 @@
 .bookCard {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 
 ul {
@@ -14,9 +14,9 @@ ul {
 }
 
 .bookTitle {
-margin-left: 3%;
+  margin-left: 3%;
 }
 
 .bookTitle > h2 {
-margin: 0;
+  margin: 0;
 }
