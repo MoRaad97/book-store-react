@@ -1,14 +1,17 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import styles from './Styles/navbar.module.css' 
 const Navbar = () => {
   return (
-    <nav>
-      <img src="#" alt="BookStore Logo" className="logo"/>
-      <ul className="links">
-        <li><a href="#" className="book-link">BOOKS</a></li>
-        <li><a href="#" className="Categories-link">CATEGORIES</a></li>
+    <nav className={styles.navbar}>
+      <div className={styles.linkLogoContainer}>
+      <h2 className={styles.logo}>Bookstore CMS</h2>
+      <ul className={styles.links}>
+        <li><Link  to="/" className={styles.bookNav}>Books</Link></li>
+        <li><Link to="/Categories" className={styles.CategoriesNav}>Categories</Link></li>
       </ul>
-      <div className="user-logo"><img src="#" alt="user logo"/></div>
+      </div>
+      <div className={styles.userLogo}>User</div>
     </nav>
   )
 }

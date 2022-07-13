@@ -1,11 +1,12 @@
 import React from "react";
-
+import styles from './Styles/addBookForm.module.css'
 const AddBookForm = () => {
   return (
-    <section className="book-form">
+    <section className={styles.bookForm}>
+      <hr />
       <form >
-        <input type="text" name="title" className="title-input" />
-        <input type="text" name="" className="category-input" />
+        <input type="text" name="title" className={styles["title-input"]} placeholder="Book Title"/>
+        <input type="text" name="Author" className={styles["author-input" ]}placeholder="Book Author" />
         <button>ADD BOOK</button>
       </form>
     </section>
