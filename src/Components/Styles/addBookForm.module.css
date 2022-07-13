@@ -1,0 +1,19 @@
+.bookForm {
+  background-color: #eee;
+  height: 100px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 6.25rem 0;
+}
+
+.title-input {
+width: 55%;
+}
+
+.author-input {
+width: 30%;
+}

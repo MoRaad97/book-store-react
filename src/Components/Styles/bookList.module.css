@@ -1,0 +1,19 @@
+.books {
+	height: 60vh;
+  overflow-y: scroll;
+  background-color: #eee;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+.books::-webkit-scrollbar {
+  display: none;
+}
+
+.booksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 1rem 6.25rem 0;
+}
