@@ -1,14 +1,17 @@
-import BookList from "./Components/bookList";
+import StoreContainer from "./Components/StoreContainer";
 import Navbar from "./Components/navbar";
-import AddBookForm from "./Components/addBookForm";
+import Categories from "./Components/Categories";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
-		<>
-		<Navbar/>
-		<BookList/>
-		<AddBookForm/>
-		</>
+		<BrowserRouter>
+			<Navbar/>
+		<Routes>
+			<Route path="/" element={<StoreContainer/>}/>
+			<Route path="Categories" element={<Categories/>}/>
+		</Routes>
+		</BrowserRouter>
 	);
 }
 
