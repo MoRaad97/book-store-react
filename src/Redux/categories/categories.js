@@ -1,27 +1,26 @@
 // Actions
-const CHECK_STATUS = 'bookList/books/CHECK_STATUS'
-
+const CHECK_STATUS = 'bookList/books/CHECK_STATUS';
 
 // initial state
 const defaultState = {
-  categories: []
+  categories: [],
 };
 
 // Reducer
 export default function categoriesReducer(state = defaultState, action) {
   switch (action.type) {
-    case CHECK_STATE:
-      return [action.text]
+    case CHECK_STATUS:
+      return [action.text];
     default:
-      return state
+      return state;
   }
 }
 
-// Action Creators 
+// Action Creators
 
 export function addBook() {
   return {
     type: CHECK_STATUS,
-    text: "Under construction"
-  }
+    text: 'Under construction',
+  };
 }
