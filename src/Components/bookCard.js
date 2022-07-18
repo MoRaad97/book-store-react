@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Styles/bookCard.module.css';
+import { useSelector } from 'react-redux/es/exports';
 
-const BookCard = (props) => (
-  props.books.map((book) => (
+const BookCard = () => {
+  const books = useSelector(state => state.booksReducer)
+  return (books.map((book) => (
     <div className={styles.bookCard} key={book.id}>
       <div className={styles.bookTitle}>
         <p>Category</p>
@@ -28,7 +30,8 @@ const BookCard = (props) => (
       </div>
     </div>
   ))
+  )
 
-);
+};
 
 export default BookCard;
