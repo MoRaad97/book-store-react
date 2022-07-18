@@ -2,15 +2,13 @@
 const CHECK_STATUS = 'book-store-react/books/CHECK_STATUS';
 
 // initial state
-const defaultState = {
-  categories: [],
-};
+const categories = [];
 
 // Reducer
-export default function categoriesReducer(state = defaultState, action) {
+export default function categoriesReducer(state = categories, action) {
   switch (action.type) {
     case CHECK_STATUS:
-      return [action.text];
+      return action.text;
     default:
       return state;
   }
@@ -18,7 +16,7 @@ export default function categoriesReducer(state = defaultState, action) {
 
 // Action Creators
 
-export function addBook() {
+export function CheckStatus() {
   return {
     type: CHECK_STATUS,
     text: 'Under construction',
