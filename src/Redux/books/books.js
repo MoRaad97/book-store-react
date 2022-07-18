@@ -1,6 +1,6 @@
 // Actions
-const ADD_BOOK = 'bookList/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookList/books/REMOVE_BOOK';
+const ADD_BOOK = 'book-store-react/books/ADD_BOOK'
+const REMOVE_BOOK = 'book-store-react/books/REMOVE_BOOK'
 
 // initial state
 const defaultState = {

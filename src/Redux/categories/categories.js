@@ -1,5 +1,5 @@
 // Actions
-const CHECK_STATUS = 'bookList/books/CHECK_STATUS';
+const CHECK_STATUS = 'book-store-react/books/CHECK_STATUS'
 
 // initial state
 const defaultState = {
