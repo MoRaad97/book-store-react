@@ -3,7 +3,18 @@ const ADD_BOOK = 'book-store-react/books/ADD_BOOK';
 const REMOVE_BOOK = 'book-store-react/books/REMOVE_BOOK';
 
 // initial state
-const bookList = []
+const bookList = [
+  {
+    title: 'Microverse',
+    author: 'Students',
+    id: '1',
+  },
+  {
+    title: 'React & Reduc',
+    author: 'developers',
+    id: '2',
+  },
+]
 
 // Reducer
 export default function booksReducer(state = bookList, action) {
