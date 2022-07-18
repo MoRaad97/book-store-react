@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './Styles/bookCard.module.css';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
+import styles from './Styles/bookCard.module.css';
 import { removeBook } from '../Redux/books/books';
+
 const BookCard = () => {
   // state from store - booksReducer
-  const books = useSelector(state => state.booksReducer)
-  const dispatch = useDispatch()
+  const books = useSelector((state) => state.booksReducer);
+  const dispatch = useDispatch();
   // render the books using the state
   return (books.map((book) => (
     <div className={styles.bookCard} key={book.id}>
@@ -33,8 +34,7 @@ const BookCard = () => {
       </div>
     </div>
   ))
-  )
-
+  );
 };
 
 export default BookCard;
