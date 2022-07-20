@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import styles from './Styles/bookCard.module.css';
-import { removeBook } from '../Redux/books/books';
+import { loadBooksThunk, removeBookThunk } from '../Redux/books/books';
 
 const BookCard = () => {
   // state from store - booksReducer
-  const books = useSelector((state) => state.booksReducer);
   const dispatch = useDispatch();
+  const bookList = useSelector((state) => state.bookList);
+
+  useEffect(() => {
+    dispatch(loadBooksThunk());
+  }, []);
+
+  const handle = (e) => {
+    dispatch(removeBookThunk(e.target.id));
+  };
   // render the books using the state
-  return (books.map((book) => (
+  return (bookList.map((book) => (
     <div className={styles.bookCard} key={book.id}>
       <div className={styles.bookTitle}>
         <p>Category</p>
@@ -16,7 +24,7 @@ const BookCard = () => {
         <p>{book.author}</p>
         <ul>
           <li><button type="button">Comment</button></li>
-          <li><button type="button" onClick={() => dispatch(removeBook(book.id))}>Remove</button></li>
+          <li><button type="button" id={book.id} onClick={handle}>Remove</button></li>
           <li><button type="button">Edit</button></li>
         </ul>
       </div>

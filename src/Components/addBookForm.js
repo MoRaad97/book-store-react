@@ -1,25 +1,53 @@
-import React, { useRef } from 'react';
-import { useDispatch } from 'react-redux/es/exports';
-import uniqid from 'uniqid';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import styles from './Styles/addBookForm.module.css';
-import { addBook } from '../Redux/books/books';
+// import { useDispatch } from 'react-redux/es/hooks/useDispatch';
+import { addBookThunk } from '../Redux/books/books';
 
 const AddBookForm = () => {
-  // calling useDispatch to the component
   const dispatch = useDispatch();
-  const titleInput = useRef(null);
-  const authorInput = useRef(null);
+  const [state, setState] = useState({
+    title: '',
+    author: '',
+    category: '',
+  });
 
-  // const handleChange = () => {
+  const handle = (e) => {
+    setState({
+      ...state, [e.target.name]: e.target.value,
+    });
+  };
 
-  // }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(addBookThunk(state));
+    setState({
+      title: '',
+      author: '',
+      category: '',
+    });
+  };
   return (
     <section className={styles.bookForm}>
       <hr />
-      <form>
-        <input ref={titleInput} type="text" name="title" className={styles['title-input']} placeholder="Book Title" />
-        <input ref={authorInput} type="text" name="Author" className={styles['author-input']} placeholder="Book Author" />
-        <button type="button" onClick={() => dispatch(addBook(titleInput.current.value, authorInput.current.value, uniqid()))}>ADD BOOK</button>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="title"
+          onChange={handle}
+          value={state.title}
+          className={styles['title-input']}
+          placeholder="Book Title"
+        />
+        <input
+          type="text"
+          name="author"
+          onChange={handle}
+          value={state.author}
+          className={styles['author-input']}
+          placeholder="Book Author"
+        />
+        <button type="submit">ADD BOOK</button>
       </form>
     </section>
   );
