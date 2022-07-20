@@ -29,7 +29,9 @@ const AddBookForm = () => {
   return (
     <section className={styles.bookForm}>
       <hr />
+      <h2>ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
+
         <input
           type="text"
           name="title"

@@ -1,12 +1,21 @@
 .CategoriesContainer {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
 }
 
 .checkStateBtn {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
   background-color: #0290ff;
   font-size: 25px;
-  margin-top: 40px;
   border: 1px solid #0290ff;
   border-radius: 6px;
+}
+
+.CategoriesContainer h1 {
+  width: fit-content;
+  color: #0290ff;
+  text-transform: capitalize;
+  margin: 30px auto;
 }

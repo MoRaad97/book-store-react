@@ -39,7 +39,6 @@ export const addBookThunk = createAsyncThunk(ADD_BOOK, async (
   await axios.post(`${baseUrl}/${appId}/books`, book)
     .then(() => thunkAPI.dispatch(loadBooksThunk()))
     .catch((err) => { console.log('Error', err); });
-
   const books = thunkAPI.getState().booksList;
   return books;
 });
