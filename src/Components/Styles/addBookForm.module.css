@@ -1,6 +1,22 @@
 .bookForm {
-  background-color: #eee;
+  background-color: transparent;
   height: 100px;
+}
+
+hr {
+  width: 80%;
+  border-color: #eee;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+.bookForm > h2 {
+  margin: 0 6.25rem 1.5rem;
+  color: #888;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
 }
 
 form {
@@ -12,8 +28,24 @@ form {
 
 .title-input {
   width: 55%;
+  border: solid 1px #e8e8e8;
+  padding: 8px 15px;
 }
 
 .author-input {
-  width: 30%;
+  width: 27%;
+  border: solid 1px #e8e8e8;
+  padding: 8px 15px;
+}
+
+form button {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.5px;
+  padding: 7.3px 15px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: white;
 }
