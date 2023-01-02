@@ -16,6 +16,7 @@
 [Netlify](https://beamish-lebkuchen-b81437.netlify.app/)
 
 
+## Getting Started
 To get a local copy up and running follow these simple steps.
 
 - Clone the project `$ git clone https://github.com/MoRaad97/book-store-react.git`
