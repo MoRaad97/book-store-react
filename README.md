@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Netlify](https://beamish-lebkuchen-b81437.netlify.app/)
+- [Netlify Live Link](https://react-bookstore-moraad.netlify.app/)
 
 
 ## Getting Started
