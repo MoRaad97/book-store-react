@@ -11,7 +11,7 @@
 - React, Redux frameworks
 - Eslint, Stylelintrc, Redux ToolKit
 
-## Live Demo (if available)
+## Live Demo
 
 - [Netlify Live Link](https://react-bookstore-moraad.netlify.app/)
 
