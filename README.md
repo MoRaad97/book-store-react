@@ -11,6 +11,9 @@
 - React, Redux frameworks
 - Eslint, Stylelintrc, Redux ToolKit
 
+## Screenshots
+![ScreenShot_20230104172800](https://user-images.githubusercontent.com/89518488/210771302-dafbd893-ebb9-4f01-86d3-8c8c8de48953.png)
+
 ## Live Demo
 
 - [Netlify Live Link](https://react-bookstore-moraad.netlify.app/)
